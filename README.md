@@ -13,9 +13,14 @@ Clone this to your computer:
 go get github.com/vikramdurai/macaque-lang
 ```
 
-Install it:
+Test it:
 ```bash
 cd $GOPATH/github.com/vikramdurai/macaque-lang
+go run main.go test.maq
+```
+
+Install it:
+```bash
 go build
 # anywhere in your $PATH
 mv macaque-lang /usr/bin
