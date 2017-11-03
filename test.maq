@@ -1,0 +1,6 @@
+var one = 1
+var hello_world = "Hello World"
+var name = "Vikram"
+print name
+print hello_world
+print one
