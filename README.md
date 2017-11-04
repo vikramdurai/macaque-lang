@@ -5,6 +5,8 @@ a short, simple, inelegant and unidiomatic language written in Golang
 Features:
 * A `print` statement
 * Variables using the `var` keyword
+* Conditionals using `if`
+* Is truthy!
 
 ## Install
 
@@ -29,4 +31,4 @@ mv macaque-lang /usr/bin
 ## License
 
 Use of this software is governed by a 
-BSD-style license found in the `LICENSE` file
+MIT license found in the `LICENSE` file
