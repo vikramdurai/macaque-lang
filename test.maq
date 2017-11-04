@@ -3,5 +3,5 @@ var hello_world = ""
 var name = "Vikram"
 print name
 print one
-if (hello_world)
-if (one)
+if (true)
+if ()

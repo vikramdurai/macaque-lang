@@ -111,6 +111,11 @@ func lex(linum int, line string) {
 			if strings.HasSuffix(tokens[1], ")") {
 				cmd := &Command{Name: "if"}
 				// the test is usually about a variable
+				if len(strings.TrimSuffix(strings.TrimPrefix(tokens[1], "("), ")")) == 0 ||
+					strings.TrimSuffix(strings.TrimPrefix(tokens[1], "("), ")") == "true" ||
+					strings.TrimSuffix(strings.TrimPrefix(tokens[1], "("), ")") == "false" {
+					fail(errors.New(fmt.Sprintf("line %d: pointless to evaluate the \"if\"", linum)))
+				}
 				test := strings.TrimSuffix(strings.TrimPrefix(tokens[1], "("), ")")
 				v := vars[test]
 				switch v.(type) {
