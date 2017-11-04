@@ -1,6 +1,7 @@
 var one = 1
-var hello_world = "Hello World"
+var hello_world = ""
 var name = "Vikram"
 print name
-print hello_world
 print one
+if (hello_world)
+if (one)
