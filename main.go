@@ -32,7 +32,7 @@ func (c *Command) addArgument(arg interface{}) {
 }
 
 /*
-	Execute executes a command, by using what's
+	execute executes a command, by using what's
 	implied by the command name.
 */
 func execute(c *Command) {
@@ -60,7 +60,7 @@ func fail(reason error) {
 }
 
 /*
-	Lex is a tokenizer that depends on
+	lex is a tokenizer that depends on
 	whitespace for hints
 */
 func lex(linum int, line string) {
